@@ -1,0 +1,453 @@
+/*general*/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif&subset=cyrillic');
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/MyriadPro-Regular.woff') format('woff');
+}
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.25;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+
+    color: #000;
+    background-color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/*header*/
+
+.nav-list {
+    font-size: 18px;
+    font-weight: 600;
+
+    display: inline-block;
+
+    padding: 25px;
+
+    text-decoration: none;
+}
+
+.main-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    -ms-flex-wrap: wrap;
+
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.services-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -ms-flex-pack: distribute;
+
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.nav-list-portfolio {
+    line-height: .8;
+
+    margin-left: 25px;
+    padding: 14px 30px;
+
+    color: #399;
+    border: solid 2px #399;
+    border-radius: 5px;
+}
+
+.nav-hr {
+    height: 28px;
+
+    border-left: 1px solid #ccc;
+}
+
+/*hero*/
+
+.hero {
+    /*background-image: url(/img/main_bg.jpg);
+    height: 19.73vw;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;*/
+    position: relative;
+}
+
+.logo-cars {
+    position: absolute;
+    bottom: 25px;
+    left: calc((100vw - 1160px) / 2);
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    width: 1140px;
+
+    -webkit-box-pack: justify;
+
+        -ms-flex-pack: justify;
+
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+/*services*/
+
+.services {
+    min-height: 565px;
+
+    background-image: url(../img/sketch_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.services-wrap {
+    display: -ms-grid;
+    display: grid;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    background-color: #fff;
+
+    -ms-grid-columns: (217px)[auto-fit];
+
+        grid-template-columns: repeat(auto-fit, 217px);
+    grid-gap: 1.15%;
+}
+
+.services-card {
+    margin-bottom: 10px;
+
+    border: solid 1px #f0ede7;
+    background-color: #f8f7f2;
+    -webkit-box-shadow: 0 2px 0 0 rgba(5, 5, 4, .2);
+            box-shadow: 0 2px 0 0 rgba(5, 5, 4, .2);
+
+    -ms-flex-preferred-size: 218px;
+
+        flex-basis: 218px;
+}
+
+.services-card-title {
+    font-family: 'PT Serif', serif;
+    font-size: 28px;
+    line-height: .8;
+    font-weight: normal;
+
+    margin-bottom: 15px;
+}
+
+.services-card-box {
+    padding: 10px 11px;
+}
+
+.services-card-text {
+    font-family: 'MyriadPro-Regular', sans-serif;
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+/*footer*/
+
+.footer-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -ms-flex-wrap: wrap;
+
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.footer-box {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-info-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+
+    max-width: 448px;
+
+    color: #666;
+}
+
+.footer-info-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-top: auto;
+}
+
+.footer-social-item {
+    display: block;
+    overflow: hidden;
+
+    width: 40px;
+    height: 0;
+    margin-right: 15px;
+    padding-top: 38px;
+}
+
+.footer-social-link-insta {
+    background-image: url(../img/instagram.png);
+    background-repeat: no-repeat;
+}
+
+.footer-social-link-vk {
+    background-image: url(../img/vk-social-logotype.png);
+    background-repeat: no-repeat;
+}
+
+.footer-social-link-fb {
+    background-image: url(../img/facebook-logo-button.png);
+    background-repeat: no-repeat;
+}
+
+.footer-social-link-yt {
+    background-image: url(../img/youtube-symbol.png);
+    background-repeat: no-repeat;
+}
+
+.footer-social-link-d {
+    background-image: url(../img/dlogo.png);
+    background-repeat: no-repeat;
+}
+
+.footer-hr {
+    border-top: 1px solid #ccc;
+}
+
+.footer-disclaimer-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+
+    margin-bottom: 35px;
+
+    color: #969494;
+}
+
+.footer-disclaimer-links-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.footer-disclaimer-links:first-child {
+    margin-right: 15px;
+}
+
+.footer-disclaimer-links,
+.footer-disclaimer-link>a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+
+    color: #399;
+}
+
+/*desktop*/
+
+@media (min-width: 961px) {
+    .menu-button {
+        display: none;
+    }
+}
+
+/*adaptive*/
+
+@media (max-width: 960px) {
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .main-header {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .hero-pic img {
+        width: 100%;
+    }
+    .logo-cars {
+        position: static;
+
+        width: 100%;
+        padding: 40px 20px 20px;
+
+        background-color: #f8f7f2;
+
+        -ms-flex-wrap: wrap;
+
+            flex-wrap: wrap;
+    }
+    .logo-cars {
+        display: -ms-grid;
+        display: grid;
+
+        grid-gap: 40px;
+        -ms-grid-columns: (110px)[auto-fit];
+            grid-template-columns: repeat(auto-fit, 110px);
+    }
+    .logo-cars-pic {
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+        -ms-grid-column-align: center;
+            justify-self: center;
+    }
+    .logo-cars-pic img {
+        
+    }
+    .logo-cars {
+        padding: 40px 20px 40px;
+    }
+    .menu-list {
+        display: none;
+    }
+    .menu-button {
+        font-size: 25px;
+
+        position: relative;
+
+        width: 50px;
+        height: 1em;
+        padding: 0;
+
+        cursor: pointer;
+        text-indent: -9999px;
+
+        border: none;
+        background-color: transparent;
+    }
+    .menu-button:before {
+        position: absolute;
+        left: 0;
+
+        width: 100%;
+        height: 20%;
+
+        content: '';
+
+        background-color: #000;
+    }
+    .menu-button:before {
+        top: 0;
+    }
+    .menu-button-label {
+        position: absolute;
+        top: 50%;
+        left: 0;
+
+        width: 100%;
+        height: 20%;
+
+        background-color: #000;
+    }
+    .services {
+        background-image: none;
+    }
+    .services-wrap {
+        padding-top: 40px;
+        padding-bottom: 100px;
+
+        grid-gap: 0;
+        grid-column-gap: 13px;
+    }
+    .services-card {
+        margin-bottom: 30px;
+    }
+    .footer-info {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .footer-info-text {
+        margin-bottom: 40px;
+    }
+}
+
+/*mobile*/
+
+@media (max-width: 641px) {
+    .main-logo-box {
+        width: 76px;
+    }
+    .main-header {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .menu-button-label {
+        margin-top: -.1em;
+    }
+    .logo-cars {
+        padding: 40px 20px 60px;
+    }
+    .services-wrap {
+        grid-column-gap: 10px;
+    }
+}
